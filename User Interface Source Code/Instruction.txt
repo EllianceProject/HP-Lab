@@ -1,0 +1,32 @@
+1. Import all the mysql file in your local server (Folder name: table_db, filename: phdbayv2.sql)
+
+2. Dont forget to change the connection string in config.php
+
+3. Then run mcm biasa. 
+
+4. UI: index.php
+-backend in fetch_data1.php 
+-backend line 5-268 in index.php for pareto chart
+    ->pareto ui: 1192-1256
+-backend line 922-1053 in index.php for table
+
+5.UI: omron.php
+-backend in fetch_data2.php
+-for gauge:
+   ->tm_power.js (fetch_data_tmrobotPwr.php)
+   ->tm_volt.js (fetch_data_tmrobotPwr.php)
+   ->tm_current.js (fetch_data_tmrobotPwr.php)
+-for thermometer:
+   -> line 522-600 in omron.php (fetch_data_tmrobotTemp.php)
+
+6. UI: agv.php
+-backend in fetch_data3.php
+-for scatter chart:
+   ->line 4-15 in agv.php (backend)
+   ->line 498-539 in agv.php (UI)
+
+7. UI: pen.php
+-backend in fetch_pen.php
+
+8. UI: table.php
+-backedn in fetch_table.php
